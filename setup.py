@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="etime", 
-    version="0.1",
+    version="0.2",
     author="Amaljith kuttamath",
     author_email="kuttamath.amaljith@gmail.com",
     description="A simple package to calculate the execution time of certain lines of code",
