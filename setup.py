@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/amaljithkuttamath/exectime",
-    download_url = "https://github.com/amaljithkuttamath/exectime/archive/v0.1.tar.gz",
+    download_url = "https://github.com/amaljithkuttamath/exectime/archive/0.1.tar.gz",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
