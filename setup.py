@@ -5,13 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="et-ak95", 
-    version="0.0.1",
+    version="0.1",
     author="Amaljith kuttamath",
     author_email="kuttamath.amaljith@gmail.com",
     description="A simple package to calculate the execution time of certain lines of code",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/amaljithkuttamath/exectime",
+    download_url = "https://github.com/amaljithkuttamath/exectime/archive/v0.1.tar.gz",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
