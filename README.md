@@ -1,6 +1,8 @@
-# exectime
+# Install
 
-Average time to execute these 2 commands is 100ms
+```
+pip install etime
+```
 
 Usage:-
 
