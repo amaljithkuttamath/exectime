@@ -17,7 +17,7 @@ class ET():
         self.__stop2 = dt.now()
         __dtx = self.__stop2 - self.__start2
         __dtz = self.__stop1 - self.__start1
-        return print(f" \033[1;35m{self.__info}  | The execution time = \033[0m{__dtx}S  | {__dtz} NS" )
+        return print(f"\n\033[1;35m{self.__info}  | The execution time = \033[0m{__dtx}S  | {__dtz} NS" )
     
 class ETM(object):
     """ ETM used with the statement 'with' to time some execution.
@@ -62,9 +62,3 @@ class ETM(object):
         """
         self.seconds = dt.now() - self.start
         return self.seconds
-
-# execution_time = ET("info")
-# ET("self").stop()
-
-# with ETM() as etm:
-#     print("xyz")

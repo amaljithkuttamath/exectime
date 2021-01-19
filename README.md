@@ -18,7 +18,7 @@ execution_time.stop()
 ```
 ### Output:
 ```
- info  | The execution time = 0:00:00.000010ms  | 15000 NS
+ self  | The execution time = 0:00:00.000158S  | 156000 NS
  ```
 
  ## Example 
@@ -53,18 +53,15 @@ with ETM() as etm:
     """
 ```
 ### Output:
-```
- | Started at | 2021-01-04 22:58:56.947392 |
-
- | End at | 2021-01-04 22:58:56.947535  |
-
-  | Elapsed time | 0:00:00.000143 Sec | 
+```shell
+[Started]: 2021-01-19 17:36:39.878058
+[End]: 2021-01-19 17:36:39.878538 Sec
+[Elapsed time]:  0:00:00.000466 Sec
 ```
 
 example
 
 ```python
-
 from et.et import ETM
 
 with ETM() as em:
@@ -76,12 +73,11 @@ with ETM() as em:
 
 ### Output
 ```
- | Started at | 2021-01-05 14:14:25.392834 |
+The input = 1234567, output = 21547.258986468834
 
- The input = 1234567, output = 21547.258986468834
- | End at | 2021-01-05 14:14:25.392888  |
-
-  | Elapsed time | 0:00:00.000054 Sec | 
+[Started]: 2021-01-19 17:36:39.878058
+[End]: 2021-01-19 17:36:39.878538 Sec
+[Elapsed time]:  0:00:00.000466 Sec
 
 ```
 
