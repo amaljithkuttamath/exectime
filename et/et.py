@@ -17,7 +17,7 @@ class ET():
         self.__stop2 = dt.now()
         __dtx = self.__stop2 - self.__start2
         __dtz = self.__stop1 - self.__start1
-        return print(f" {self.__info}  | The execution time = {__dtx}S  | {__dtz} NS" )
+        return print(f" \033[1;35m{self.__info}  | The execution time = \033[0m{__dtx}S  | {__dtz} NS" )
     
 class ETM(object):
     """ ETM used with the statement 'with' to time some execution.
@@ -26,20 +26,16 @@ class ETM(object):
     with ETM() as etm:
        # Code to time
     """
-
     def __enter__(self):
         """
         """
         self.start = dt.now()
-        self.log('\n | Started at | {} |')
-
         return self
-
+    
     def __exit__(self, exc_type, exc_val, exc_tb):
         """
         """
         self.endlog()
-
         return False
 
     def log(self, s, elapsed=None):
@@ -50,15 +46,16 @@ class ETM(object):
         """
         # print(s.format(self._secondsToStr(self.clock())))
         print(s.format(dt.now()))
-
         if(elapsed is not None):
-            print('\n  | Elapsed time | {} Sec | \n'.format(elapsed))
+            print('\033[1;35m[Elapsed time]:\033[0m  {} Sec'.format(elapsed))
 
     def endlog(self):
         """Log time for the end of execution with elapsed time.
         """
-        self.log(' | End at | {}  |', self.now())
-
+        self.log(f'\n\033[1;33m[Started]:\033[0m {self.start}') 
+        self.log('\033[1;33m[End]:\033[0m {} Sec', self.now())
+        
+        
     def now(self):
         """Return current elapsed time as hh:mm:ss string.
         :return: String.
