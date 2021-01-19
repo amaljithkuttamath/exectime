@@ -8,7 +8,7 @@ Usage:-
 
 # Execution Time
 ```python
-from et.et import ET
+from et import ET
 
 execution_time = ET("info")
 """
@@ -24,7 +24,7 @@ execution_time.stop()
  ## Example 
 
  ```python
-from et.et import ET
+from et import ET
 
 executiontime = ET("Calculate radians")
 
@@ -45,7 +45,7 @@ executiontime.stop()
 
 # ETM [Execution Time Manager]
 ```python
-from et.et import ETM
+from et import ETM
 
 with ETM() as etm:
     """
@@ -62,7 +62,7 @@ with ETM() as etm:
 example
 
 ```python
-from et.et import ETM
+from et import ETM
 
 with ETM() as em:
     import math

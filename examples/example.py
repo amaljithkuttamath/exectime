@@ -1,4 +1,6 @@
-from et.et import ET
+# from et.et import ET
+
+from et import ET
 
 executiontime = ET("Calculate radians")
 
@@ -12,8 +14,7 @@ executiontime.stop()
 
 #######################################################
 
-
-from et.et import ETM
+from et import ETM
 
 with ETM() as em:
     import math
