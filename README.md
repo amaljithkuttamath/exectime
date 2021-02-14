@@ -7,6 +7,30 @@ pip install etime
 Usage:-
 
 # Execution Time
+
+## check_time
+
+#### timeit wrapper
+
+```python
+from et import check_time
+
+@check_time(number=10000, debug = True)
+def multiply(x=1000, y=0.828348):
+    return x*y
+
+print("Value: ",multiply())
+```
+### Output:
+```
+--------------------------------------------------------------------------
+[ multiply -> 10000 iterations] [Elapsed time]: 0.003009455000000001 Sec
+--------------------------------------------------------------------------
+
+Value: 828.348
+ ```
+
+## ET
 ```python
 from et import ET
 
@@ -43,7 +67,7 @@ executiontime.stop()
  
  ```
 
-# ETM [Execution Time Manager]
+## ETM [Execution Time Manager]
 ```python
 from et import ETM
 
